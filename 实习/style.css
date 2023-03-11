@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 清除超链接默认样式 */
+a{
+    text-decoration: none;
+}
+/* 清除浮动影响 */
+.clearfix{
+    overflow: hidden;
+}
+/* wrapper负责居中效果 */
+.wrapper {
+    margin: 0 auto;
+    width: 1200px;
+}
+/* header负责顶部 */
+.header {
+height: 43px;
+background-color: aqua;
+border-bottom: 1px solid grey;
+margin: 10px auto;
+}
+h1{
+    float: left;
+}
+.navi-left {
+float: left;
+height: 43px;
+margin: auto 20px;
+background-color: green;
+}
+.navi-left li{
+    float: left;
+    margin-right: 10px;
+    list-style: none;
+    background-color: gold;
+}
+/* 文字内容 */
+.navi-left li a{
+    display: block;
+    color: black;
+    margin: 10px 20px;
+    padding: 0 5px;
+}
+.navi-plus {
+    float: left;
+    margin: 5px 10px auto 200px;
+    background-color: grey;
+    padding: 5px 5px;
+    color: orange;
+}
+.enterprise{
+    display: block;
+    float: left;
+    border: 1px solid blue;
+    margin: 5px 5px;
+    padding: 5px;
+    color: blue;
+}
+.navi-right{
+    float: right;
+    margin-top: 10px;
+    color:gray;
+    border-left: 1px solid gray;
+    background-color: palegreen;
+}
+.navi-right a{
+    display: inline;
+    color: black;
+    margin:10px 5px;
+}
