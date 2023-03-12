@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 清除超链接默认样式 */
+li{
+    list-style: none;
+}
+/* 清除li默认样式 */
+a{
+    text-decoration: none;
+}
+/* 清除浮动影响 */
+.clearfix{
+    overflow: hidden;
+}
+/* wrapper负责居中效果 */
+.wrapper {
+    margin: 0 auto;
+    width: 1200px;
+}
+/* header负责顶部 */
+.header {
+height: 43px;
+background-color: aqua;
+border-bottom: 1px solid grey;
+margin: 10px auto;
+}
+h1{
+    float: left;
+}
+.navi-left {
+float: left;
+height: 43px;
+margin: auto 20px;
+background-color: green;
+}
+.navi-left li{
+    float: left;
+    margin-right: 10px;
+    background-color: gold;
+}
+/* 文字内容 */
+.navi-left li a{
+    display: block;
+    color: black;
+    margin: 10px 20px;
+    padding: 0 5px;
+}
+.navi-plus {
+    float: left;
+    margin: 5px 10px auto 200px;
+    background-color: grey;
+    padding: 5px 5px;
+    color: orange;
+}
+.enterprise{
+    display: block;
+    float: left;
+    border: 1px solid blue;
+    margin: 5px 5px;
+    padding: 5px;
+    color: blue;
+}
+.navi-right{
+    float: right;
+    margin-top: 10px;
+    color:gray;
+    border-left: 1px solid gray;
+    background-color: palegreen;
+}
+.navi-right a{
+    display: inline;
+    color: black;
+    margin:10px 5px;
+}
+/*  讨论区*/
+.main{
+    width: 1000px;
+    height: 1000px;
+    background-color: transparent;
+}
+.left-part{
+    background-color: green;
+    float:left;
+    height: 100%;
+    width: 750px;
+    /* margin-right: 250px; */
+}
+/* .right-part{
+    height: 100%;
+    background-color: red;
+} */
+/* .discussion{
+    float: left;
+} */
+.discussion li{
+display: inline-block;
+width: 350px;
+height: 150px;
+background-color: darkblue;
+margin-right: 15px;
+}
+
+/* .question{
+    float: left;
+    width: 300px;
+    height: 150px;
+    background-color: wheat;
+} */
+/* .question>a{
+    color:gray;
+} */
+.question li{
+    
+    display: inline-block;
+    width: 160px;
+    height: 160px;
+    background-color: rgb(218, 33, 184);
+    margin-left: 15px;
+}
+.article li{
+    width: 720px;
+    height: 150px;
+    background-color: #077979;
+    border-top: 1px solid gray;
+    margin: 0 10px;
+}
+/*  */
+/* .choose{
+    float: right;
+    width: 200px;
+    height: 70px;
+    background-color: olive;
+    margin-top: 100px;
+} */
+.search{
+    float: right;
+    width: 200px;
+    height: 50px;
+    background-color: brown;
+}
+.banner{
+float:right;
+width: 200px;
+height: 100px;
+background-color: burlywood;
+margin-top: 20px;
+}
+.rank{
+float: right;
+width: 200px;
+    
+}
+.rank li{
+    height: 50px;
+}
