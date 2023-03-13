@@ -10,6 +10,7 @@ li{
 /* 清除li默认样式 */
 a{
     text-decoration: none;
+    color: black;
 }
 /* 清除浮动影响 */
 .clearfix{
@@ -101,6 +102,7 @@ width: 350px;
 height: 150px;
 background-color: darkblue;
 margin-right: 15px;
+padding: 10px 5px;
 }
 
 /* .question{
@@ -112,6 +114,51 @@ margin-right: 15px;
 /* .question>a{
     color:gray;
 } */
+
+
+/* 讨论区样式 */
+/* .choose{
+    float: right;
+    width: 200px;
+    height: 70px;
+    background-color: olive;
+    margin-top: 100px;
+} */
+.user-bottom{
+    display: flex;
+    margin-top: 20px;
+}
+.user-hot{
+    display: inline-block;
+    background-color: #d6a510;
+    color: #e28e0fd6;
+    margin-left: 15px;
+}
+.user{
+display: flex;
+flex-wrap: nowrap;
+flex-direction: row;
+}
+.user-img img{
+    width: 15px;
+}
+.user-num-1{
+    display: flex;
+    font-size: 12px;
+    margin-right: 2px;
+}
+.user-num-2{
+    display: flex;
+    font-size: 12px;
+    color: gray;
+}
+.user-enter{
+    position: relative;
+    right: -100px;
+    color: blue;
+}
+
+/* 面试题区样式 */
 .question li{
     
     display: inline-block;
@@ -120,6 +167,60 @@ margin-right: 15px;
     background-color: rgb(218, 33, 184);
     margin-left: 15px;
 }
+.question h3{
+    margin: 10px;
+}
+.question-img{
+    height: 25px;
+    
+}
+.question-more{
+    position: relative;
+    left: 550px;
+    font-size: 15px;
+    color:  gray;
+}
+.company img{
+    width: 50px;
+    margin: 5px 10px;
+}
+.company-name{
+    margin: 5px 10px;
+}
+.company-hot{
+    font-size: 15px;
+    color: grey;
+    margin: 5px 10px;
+}
+.company-num{
+    width:10px;
+    color:greenyellow;
+}
+.company-discuss{
+    display: flex;
+    margin: 10px 10px;
+
+}
+.company-discuss img{
+    width: 16px;
+    margin-right: 10px;
+}
+.company-discuss span{
+    font-size: 16px;
+    color: #1296db;
+    margin-left: 5px;
+}
+.company-user{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 16px;
+}
+.company-user div{
+    width: 12px;
+}
+/* 文章区样式 */
+
 .article li{
     width: 720px;
     height: 150px;
@@ -127,14 +228,26 @@ margin-right: 15px;
     border-top: 1px solid gray;
     margin: 0 10px;
 }
-/*  */
-/* .choose{
-    float: right;
-    width: 200px;
-    height: 70px;
-    background-color: olive;
-    margin-top: 100px;
-} */
+
+.article-title{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.article-title img{
+    width: 25px;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+.article-title span{
+    margin:0 10px;
+}
+.article-min{
+    color: gray;
+    margin-right: 10px;
+    font-size: 15px;
+}
 .search{
     float: right;
     width: 200px;
