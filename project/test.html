@@ -1,56 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .main{
-    width: 900px;
-    height: 1000px;
-    background-color: transparent;
-    }
-    .left-part{
-        float:left;
-        background-color: green;
-        height: 100%;
-        width: 600px;
-        
-    }
-    /* .right-part{
-        height: 100%;
-        margin-left: 600px;
-        background-color: red;
-    } */
-    .mc{
-        float: right;
-        height: 100px;
-        
-        width: 200px;
-        height: 100px;
-        background-color: #103ad3;
-    }
-    </style>
 </head>
+<style>
+    button,
+    input {
+        border: 0;
+        outline: none;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .mi {
+        position: absolute;
+        left: 346px;
+        top: 25px;
+        width: 538px;
+        height: 36px;
+        border: 2px solid #b1191a;
+    }
+
+    .mi button {
+        float: left;
+        width: 80px;
+        height: 33px;
+        background-color: #b1191a;
+        font-size: 16px;
+        color: #fff;
+    }
+
+    .mi input {
+        float: left;
+        width: 454px;
+        height: 33px;
+        padding-left: 10px;
+        padding: 0 10px;
+        font-size: 14px;
+        line-height: 48px;
+        border: 1px solid #e0e0e0;
+        outline: none;
+        transition: all 0.3s;
+    }
+
+    .mi .search {
+        border: 1px solid #b1191a;
+    }
+
+    .result-list {
+        display: none;
+        left: 0;
+        top: 48px;
+        width: 454px;
+        border: 1px solid #b1191a;
+        border-top: 0;
+        background: #fff;
+    }
+
+    .result-list a {
+        display: block;
+        padding: 6px 15px;
+        font-size: 12px;
+        color: #424242;
+        text-decoration: none;
+    }
+
+    .result-list a:hover {
+        background-color: #eee;
+    }
+</style>
 <body>
-    <div class="main wrapper clearfix">
-        <!-- 左栏 -->
-        <div class="left-part">
-            <!-- 讨论部分 -->
-           
-            <!-- 面试题部分 -->
-            
-        </div>
-        <!-- 右栏 -->
-        <div class="right-part"></div>
-        <div class="mc"></div>
-        
-        
-        
-
-        </div>
+    <div class="mi">
+        <input type="search" name="" id="" placeholder="请输入要的搜索商品">
+        <button type="button">搜索</button>
+        <ul class="result-list">
+            <li><a href="#">全部商品</a></li>
+            <li><a href="#">红米手机</a></li>
+            <li><a href="#">小米14S</a></li>
+            <li><a href="#">小米笔记本</a></li>
+            <li><a href="#">小米家电</a></li>
+            <li><a href="#">小米手机</a></li>
+            <li><a href="#">云米空调</a></li>
+            <li><a href="#">云米智能机器人</a></li>
+        </ul>
     </div>
-
 </body>
+<script>
+//1.获取元素
+  let input = document.querySelector('input')
+  let ul = document.querySelector('.result-list')
+ 
+  //2.注册事件
+  //onfocus:成为焦点, 点击输入框的时候，出现闪烁光标，此时可以输入内容
+  input.onfocus = function(){
+    console.log('点击了，出现光标了，此时可以输入文字')
+  //(1)显示ul
+    ul.style.display = 'block'
+  //(2)自身边框改变 （通过新增search类名）
+    this.classList.add('search')
+  }
+ 
+  //onblur :失去焦点, 点击页面空白区域，光标消失。此时不可以输入内容
+  input.onblur = function(){
+    console.log('点其他地方了，光标消失了，此时不可以输入文字')
+  //隐藏ul
+    ul.style.display = 'none'
+  //自身边框改变 （通过移除search类名）
+    this.classList.remove('search')
+  }
+</script>
 </html>
