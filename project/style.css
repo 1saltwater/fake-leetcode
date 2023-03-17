@@ -170,6 +170,9 @@ flex-direction: row;
 }
 
 /* 面试题区样式 */
+.question ul{
+    overflow: auto hidden;
+}
 .question li{
     
     display: inline-block;
@@ -408,8 +411,25 @@ position: relative;
     width:250px;
     height: 120px;
     background-color: #743939;
-    margin: 10px 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
+.ad img{
+    float: right;
+    width:250px;
+    height: 120px;
+}
+.ad:hover{
+    float: right;
+    width:250px;
+    height: 120px;
+    background-color: #743939;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    transition: all 0.8s;
+}
+
+
 /* 两个入口样式 */
 .enter{
     float: right;
@@ -514,37 +534,86 @@ footer{
     position: relative;
     top: 300px;
     border-radius: 0;
+    
 }
 .footer-bassic{
     margin: 0 auto;
+    
 }
 nav{
     border-bottom: 1px solid rgba(255, 255, 255, 0.463);
     border-radius: 0;
 }
-.nav-sort{
+.footer-sort{
     display: flex;
     flex-direction: row;
     padding: 20px 50px;
     max-width: 960px
 }
-.nav-sort div{
+.footer-sort div{
     width: 25%;
 }
-.nav-head{
+.footer-head{
     display: block;
     color: white;
     
 }
-.nav-a{
+.footer-a{
     display: block;
     color: rgba(255, 255, 255, 0.463);
     margin: 10px 0;
 }
-.nav-media{
+.footer-media{
     float: right;
+    position: relative;
+    top: -40px;
 
 }
-.nav-img{
-    
+.footer-media img{
+    width: 20px;
+    margin-right: 7px;
+}
+.footer-link{
+    float: right;
+    position: relative;
+    right: -120px;
+    margin: 3px 5px;
+}
+.footer-link a{
+    color: white;
+    font-size: 15px;
+    padding: 0 3px;
+    border-left: 1px solid white;
+    border-radius: 0;
+}
+.footer-link a:first-child{
+    color: white;
+    font-size: 15px;
+    padding: 0 3px;
+    border-left: 0;
+    border-radius: 0;
+}
+.footer-company{
+    display: inline-block;
+    color: white;
+    font-size: 15px;
+    margin-left: 50px;
+}
+.footer-site{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    padding-left: 50px;
+}
+.footer-site a{
+    color: rgba(255, 255, 255, 0.463);
+    font-size: 15px;
+    margin-right: 10px;
+}
+.footer-site img{
+    width: 15px;
+}
+.lineBreak{
+    flex-basis: 100%;
+    width: 0;
 }
